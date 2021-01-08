@@ -16,6 +16,7 @@ configurations {
 
 repositories {
 	mavenCentral()
+	jcenter()
 }
 
 dependencies {
@@ -25,7 +26,7 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'io.projectreactor:reactor-test'
 	compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.12.0'
-
+	implementation 'net.dv8tion:JDA:4.2.0_226'
 }
 
 test {
