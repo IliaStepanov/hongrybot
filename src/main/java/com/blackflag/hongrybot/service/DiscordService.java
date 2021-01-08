@@ -18,7 +18,7 @@ public class DiscordService {
 
     @PostConstruct
     public void init() throws LoginException {
-        JDA jda = JDABuilder.createDefault("Nzk3MDIzOTY4MjA4NDg2NDIy.X_gcag.n_0zWbJR1kr4X0-KY0Gg1-FIesE").build();
+        JDA jda = JDABuilder.createDefault(System.getProperty("botToken")).build();
 
         jda.addEventListener(logLinkListener);
     }
